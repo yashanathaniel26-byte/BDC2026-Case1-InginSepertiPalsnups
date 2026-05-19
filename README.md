@@ -54,8 +54,13 @@ Dalam kompetisi ini, kami menemukan **The NLP Paradox**: asumsi standar bahwa te
 ---
 
 ## 4. Struktur File
+
+Proses Analisis Eksploratif Data (EDA) yang mendasari keputusan-keputusan pra-pemrosesan sengaja dipisahkan ke dalam notebook tersendiri (`eda.ipynb`). Hal ini dilakukan agar *notebook* pemodelan utama (`ROBERTAterbaik_final.ipynb` / `ROBERTAterbaik_documented.ipynb`) lebih bersih, fokus, dan merepresentasikan *end-to-end pipeline* yang utuh.
+
 ```text
+├── eda.ipynb                         # Analisis Eksploratif Data (EDA), alasan dan dokumentasi keputusan pemrosesan data
 ├── ROBERTAterbaik_documented.ipynb   # Source code utama (End-to-End Pipeline)
+├── InginSepertiPalsnups_code/ROBERTAterbaik_final.ipynb # Source code utama alternatif (Modeling)
 ├── requirements.txt                  # Daftar pustaka Python yang dibutuhkan
 ├── InginSepertiPalsnups.xlsx           # File prediksi akhir siap unggah
 └── README.md                         # Panduan reproduksi (file ini)
